@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 /* ---------- user options -------------------------------------------------- */
-#define TEST_FILE     "0:/ftou.bin"     /* raw binary file on SD card        */
+#define TEST_FILE     "0:/testo.bin"     /* raw binary file on SD card        */
 #define FLASH_BASE    0x000000          /* start address in flash            */
 #define USE_QUAD_IO   0                 /* 0 = PAGE_PROGRAM / RANDOM_READ    *///0 for spi and 1 for quad spi
 /* -------------------------------------------------------------------------- */
@@ -191,3 +191,4 @@ static void FlashDump(PmodSF3 *pSF3, u32 addr, u32 len)
     }
     xil_printf("\r\n--- end dump ---\r\n");
 }
+
